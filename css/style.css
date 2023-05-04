@@ -1,0 +1,542 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol {
+    list-style-type: none;
+}
+.clr {
+    clear: both;
+}
+.container {
+width: 1170px;
+margin: 0 auto;
+}
+.mx {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.sohag {
+    margin-left: 56px;
+    margin-right: 56px;
+}
+.sohag1 {
+    margin-right: 56px;
+}
+/*===nav part goes here===*/
+nav{
+    background-color: #ffffff;
+}
+.logo{
+    width: 270px;
+    float: left;
+}
+.logo img {
+    padding-top: 31px;
+}
+.manu{
+    width: 900px;
+    float: left;
+    text-align: right;
+}
+.manu ul li {
+    display: inline-block;
+}
+.manu ul li a {
+    color: #484c55;
+    font-size: 15px;
+    padding: 0 28px;
+    line-height: 100px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    display: inline-block;
+    position: relative;
+}
+.manu ul li a::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #49cbcd;
+    opacity: 0;
+    transition: all linear .3s;
+}
+.manu ul li a:hover {
+    color: #49cbcd;
+    background-color: #f8f9fb;
+}
+.manu ul li a:hover::after {
+    opacity: 1;
+    width: 100%;
+}
+.max{
+    margin-left: 56px;
+}
+
+/*===banner part goes here===*/
+#banner{
+    background: url(../images/bannerr.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 138px;
+    padding-bottom: 147px;
+    width: 100%;
+    position: relative;
+}
+#banner::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(73, 203, 205, 0.5);
+}
+.banner-main {
+    text-align: center;
+    position: relative;
+    z-index: 999;
+}
+.banner-main h2 {
+    font-size: 63px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+.banner-main p {
+    font-size: 23px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding: 0 384px;
+    line-height: 37px;
+    padding-bottom: 59px;
+}
+.banner-main .buttom {
+position: relative;
+z-index: 999;
+text-align: center;
+}
+.banner-main .buttom a {
+border: 3px solid#ffffff;
+color: #ffffff;
+font-size: 26px;
+font-family: 'Open Sans', sans-serif;
+font-weight: 600;
+border-radius: 5px;
+text-transform: capitalize;
+padding: 23px 43px;
+}
+/*===sarvice part goes here===*/
+#sarvivce {
+    width: 100%;
+    color: #ffffff;
+    padding-top: 70px;
+    padding-bottom: 98px;
+}
+.sarvice-main {
+    width: 250px;
+    float: left;
+    left: 0;
+    top: 0;
+    text-align: center;
+    padding-bottom: 99px;
+}
+.sarvice-main i {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #49cbcd;
+    line-height: 100px;
+    color: #49cbcd;
+    font-size: 37px;
+}
+.sarvice-main h2 {
+    color: #4e525d;
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+.sarvice-main p {
+    color: #4e525d;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    padding-bottom: 30px;
+}
+.sarvice-main a {
+    color: #ffffff;
+    background-color: #49cbcd;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: 10px 14px;
+    border-radius: 3px;
+}
+/*===Portfolio part goes here===*/
+#Portfolio{
+    width: 100%;
+    background-color: #f1f1f1;
+    padding-top: 52px;
+    padding-bottom: 103px;
+}
+.Portfolio-main {
+    text-align: center;
+}
+.Portfolio-main h2 {
+    color: #4e525d;
+    font-size: 42px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding-bottom: 64px;
+    text-transform: capitalize;
+}
+.img {
+    width: 370px;
+    padding-bottom: 30px;
+    float: left;
+}
+.bottom-main {
+    text-align: center;
+    padding-top: 59px;
+}
+.bottom-main a {
+    color: #ffffff;
+    background-color: #49cbcd;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding:24px 42px;
+    text-transform: capitalize;
+    border-radius: 3px;
+}
+/*===Team part goes here===*/
+#team {
+    width: 100%;
+    padding-top: 96px;
+    padding-bottom: 109px;
+}
+.team-headline {
+    text-align: center;
+}
+.team-headline h2 {
+    color: #4e525d;
+    font-size: 42px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding-bottom: 139px;
+    text-transform: capitalize;
+}
+.radius {
+    width: 250px;
+    float: left;
+    text-align: center;
+}
+.radius i {
+    width: 200px;
+    height: 200px;
+    background-color: #eeeef0;
+    border-radius: 50%;
+    line-height: 200px;
+    font-size: 41px;
+    color: transparent;
+    transition: all linear .3s;
+}
+.radius i:hover {
+    color: #f46d6d;
+}
+.radius h3 {
+    color: #4e525d;
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding-top: 72px;
+    padding-bottom: 15px;
+    text-transform: capitalize; 
+}
+.radius h4 {
+    color: #4e525d;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding-bottom: 35px;
+}
+.radius p {
+    color: #4e525d;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+}
+/*===pay part goes here===*/
+#pay {
+width: 100%;
+padding-top: 118px;
+padding-bottom: 100px;
+background-color: #f1f1f1;
+}
+.basic-main{
+    width: 370px;
+    background-color: #ddd;
+    float: left;
+    text-align: center;
+}
+.head{
+    background-color: #485460;
+    transition: all linear .3s;
+}
+.head h2{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 75px;
+    text-transform: capitalize;
+    
+}
+
+.basic-main h4{
+    font-family: 'Open Sans', sans-serif;
+    color:#485460;
+    background-color: #f8f9fb;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 68px; 
+}
+.list-item ul{
+    background-color: #fff;
+}
+.list-item ul li{
+  color: #8c9299; 
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  border-bottom: 1px solid #ecf0f1;
+  line-height: 45px; 
+}
+.list-item ul .list-item1 {
+    border-top: 1px solid #ecf0f1 ;
+}
+.bottom {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.bottom a {
+    background-color: #788492;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    line-height: 41px;
+    padding: 12px 55px;
+    border-radius: 3px;
+    transition: all linear .3s;
+}
+.basic-main:hover .head{
+    background-color: #49cbcd;
+}
+.basic-main:hover .bottom a{
+    background-color: #49cbcd;
+}
+/*===Clients part goes here===*/
+#Clients {
+    width: 100%;
+    padding-top: 139px;
+    padding-bottom: 104px;
+    background-color: #ffffff;
+    }
+.Clients-main {
+    text-align: center;
+} 
+.Clients-main h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: #4e525d;
+    font-size: 42px;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding-bottom: 39px;
+}
+.Clients-main p {
+    font-family: 'Open Sans', sans-serif;
+    color: #4e525d;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 0 225px;
+    padding-bottom: 41px;
+}
+.Clients-main h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: #9a8faf;
+    font-size: 21px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+#Clients .arow {
+ position: relative;
+}
+#Clients .arow .right{
+    position: absolute;
+    content: '';
+    color: #999;
+    right: 0;
+    top: -139px;
+    padding-right: 14px;
+   }
+#Clients .arow .left {
+    position: absolute;
+    content: '';
+    color: #999;
+    left: 0;
+    top: -139px;
+    padding-right: 14px;
+   }
+/*===Contact part goes here===*/
+#Contact {
+    width: 100%;
+    padding-top: 139px;
+    padding-bottom: 104px;
+    background:url(../images/contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Contact-main {
+    text-align: center;
+}
+.Contact-main h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding-bottom: 117px;
+} 
+.contact-left {
+    float: left;
+    width: 585px;
+    padding-right: 94px;
+}
+.contact-left h2{
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 16px;
+}
+.contact-left p{
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    padding-bottom: 39px;
+}
+.fa-facebook{
+    background-color: #3b5997;
+}
+.facebook i {
+    text-align: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%; 
+    font-size: 22px;
+    color: #ffffff;
+    line-height: 42px;
+    margin-right: 15px;     
+}
+.fa-twitter{
+    background-color: #3ec2f3;
+}
+.fa-google-plus{
+    background-color: #e44c41;
+}
+
+.mail h5 {
+    font-family: 'Open Sans', sans-serif;
+    color: #bface2;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 14px;
+    padding-top: 22px;
+}
+.mail h6 {
+    font-family: 'Open Sans', sans-serif;
+    color: #bface2;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 14px;
+}
+.mail p {
+    font-family: 'Open Sans', sans-serif;
+    color: #bface2;
+    font-size: 14px;
+    font-weight: 400;
+}
+.contact-right {
+    width: 585px;
+    float: left;
+}
+.contact-right form {
+    margin-left: 15px;
+}
+.contact-right input{
+    width: 270px;
+    height: 44px;
+    border-radius: 3px;
+    padding-left: 20px;
+    border: 0;
+}
+.contact-right input::placeholder{
+    font-family: 'Open Sans', sans-serif;
+    color: #c1c1c1;
+    font-size: 16px;
+    font-weight: 400;
+}
+.contact-right .name {
+    margin-right: 26px;
+}
+.contact-right textarea {
+    width: 100%;
+    height: 179px;
+    padding-top: 23px;
+    padding-left: 20px;
+    border-radius: 3px;
+    border: 0;
+    margin-top: 31px;
+}
+.submit{
+    text-align: right;
+    padding-top: 31px;
+}
+.submit button {
+    background-color: #49cbcd;
+    border-radius: 3px;
+    border: 0;
+    padding: 15px 55px;
+    color: #ffffff;
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+/*===nav part goes here===*/
+/*===nav part goes here===*/
+/*===nav part goes here===*/
+/*===nav part goes here===*/
+/*===nav part goes here===*/
+/*===nav part goes here===*/
